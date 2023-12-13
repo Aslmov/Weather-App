@@ -3,6 +3,7 @@ import {BsChevronLeft, BsDropletFill, BsList} from 'react-icons/bs';
 import {WiDayCloudy} from "react-icons/wi";
 import { BsCloudSunFill, BsSunFill, BsCloudLightningRainFill, BsCloudRainFill } from 'react-icons/bs';
 import axios from "axios";
+import {Link} from "react-router-dom";
 
 const SevenDays = () => {
 
@@ -61,7 +62,9 @@ const SevenDays = () => {
             </div>
             <div style={{height: '10px'}}></div>
             <div>
-                <BsChevronLeft/>
+                <Link to={'/'}>
+                    <BsChevronLeft/>
+                </Link>
             </div>
             <div>
                 <div style={{padding: '15px'}}>

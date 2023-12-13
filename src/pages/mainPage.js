@@ -121,7 +121,7 @@ function MainPage() {
 
                     </div>
                 ) : (
-                    <div>En attente de la récupération de la géolocalisation...</div>
+                    <div>En attente de la récupération des données météorologiques...</div>
                 )}
                 {locationData ? (
 
@@ -145,7 +145,7 @@ function MainPage() {
                         </div>
                     </div>
                 ) : (
-                    <div>En attente de la récupération de la géolocalisation...</div>
+                    <div>En attente de la récupération des données météorologiques...</div>
                 )}
 
                 <div style={{display: 'flex', justifyContent: 'center'}}>
@@ -158,10 +158,14 @@ function MainPage() {
                     <button style={buttonStyle} onClick={() => {
                     }}>
 
-                        <span style={{fontSize: '18px', fontWeight: 'bold', color: '#3879e0'}}>next 7 days</span>
+                        <Link to={'/sevenDays'}>
+                            <span style={{fontSize: '18px', fontWeight: 'bold', color: '#3879e0'}}>next 7 days</span>
+                        </Link>
                         <MdNavigateNext style={{fontSize: '18px', fontWeight: 'bold', color: '#3879e0'}}/>
                     </button>
+
                 </div>
+                <div style={{height: '30px'}}></div>
                 <div style={{overflowX: 'auto', whiteSpace: 'nowrap', position: 'relative'}}>
                     <div style={containerStyle}>
                         <p style={timeStyle}>12AM</p>
