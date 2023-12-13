@@ -1,0 +1,49 @@
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -30px;
+}
+.chart-container {
+  display: flex;
+}
+
+.y-axis {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.y-label {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.chart {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+}
+
+.bar {
+  flex-grow: 1;
+  border-radius: 30px;
+  margin: 0 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: black;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+}
+.yellow-bar {
+  background-color:  yellow;
+}
+.black-bar {
+  background-color:  #aac2df;
+}

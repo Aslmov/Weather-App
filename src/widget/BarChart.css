@@ -1,0 +1,33 @@
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px; /* Hauteur totale du graphique */
+    margin-top: 20px;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bar-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.bar {
+    width: 20px;
+    background-color: #3498db; /* Couleur de la barre */
+    margin-bottom: 5px;
+    transition: height 0.5s ease; /* Animation de la hauteur de la barre */
+}
+
+.label {
+    margin-top: 5px;
+}
+
+/* Ajoutez d'autres styles selon vos besoins */
